@@ -88,6 +88,8 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(DXSDK_DIR)Include</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);(DXSDK_DIR)Libx8</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -163,6 +165,7 @@
   <ItemGroup>
     <ClCompile Include="ProjectRuntime.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="ScratchAsset.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="ScratchRuntime.rc" />
