@@ -155,13 +155,14 @@
     <ClInclude Include="framework.h" />
     <ClInclude Include="ProjectRuntime.h" />
     <ClInclude Include="Resource.h" />
+    <ClInclude Include="ScratchAsset.h" />
+    <ClInclude Include="ScratchCostume.h" />
     <ClInclude Include="ScratchSprite.h" />
     <ClInclude Include="targetver.h" />
-    <ClInclude Include="ScratchRuntime.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ProjectRuntime.cpp" />
-    <ClCompile Include="ScratchRuntime.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="ScratchRuntime.rc" />

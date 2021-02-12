@@ -24,21 +24,24 @@
     <ClInclude Include="Resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ScratchRuntime.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="ScratchSprite.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ProjectRuntime.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ScratchAsset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScratchCostume.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ScratchRuntime.cpp">
+    <ClCompile Include="ProjectRuntime.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ProjectRuntime.cpp">
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
