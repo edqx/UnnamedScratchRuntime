@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30626.31
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ScratchRuntime", "ScratchRuntime.vcxproj", "{480771B0-9D56-4890-835F-567713524C1B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{480771B0-9D56-4890-835F-567713524C1B}.Debug|x64.ActiveCfg = Debug|x64
+		{480771B0-9D56-4890-835F-567713524C1B}.Debug|x64.Build.0 = Debug|x64
+		{480771B0-9D56-4890-835F-567713524C1B}.Debug|x86.ActiveCfg = Debug|Win32
+		{480771B0-9D56-4890-835F-567713524C1B}.Debug|x86.Build.0 = Debug|Win32
+		{480771B0-9D56-4890-835F-567713524C1B}.Release|x64.ActiveCfg = Release|x64
+		{480771B0-9D56-4890-835F-567713524C1B}.Release|x64.Build.0 = Release|x64
+		{480771B0-9D56-4890-835F-567713524C1B}.Release|x86.ActiveCfg = Release|Win32
+		{480771B0-9D56-4890-835F-567713524C1B}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A0707088-7C19-4C25-A1CD-72A5EE6ACD1C}
+	EndGlobalSection
+EndGlobal
