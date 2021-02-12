@@ -11,5 +11,5 @@ class ProjectRuntime
 	std::vector<ScratchSprite> sprites;
 public:
 	BOOL Init(IDirect3DDevice9* device);
-	BOOL CreateSprite(std::)
+	BOOL CreateSprite();
 };

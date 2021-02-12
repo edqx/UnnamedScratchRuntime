@@ -1,6 +1,3 @@
-// test.cpp : Defines the entry point for the application.
-//
-
 #include "framework.h"
 #include "ScratchRuntime.h"
 
@@ -144,7 +141,7 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
    hInst = hInstance;
 
    hWnd = CreateWindowA(szWindowClass, szTitle, WS_OVERLAPPEDWINDOW,
-      CW_USEDEFAULT, 0, CW_USEDEFAULT, 0, nullptr, nullptr, hInstance, nullptr);
+      CW_USEDEFAULT, 0, SCREENWIDTH, SCREENHEIGHT, nullptr, nullptr, hInstance, nullptr);
 
    if (!hWnd)
    {
@@ -187,13 +184,24 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
     case WM_DESTROY:
         PostQuitMessage(0);
         break;
+    case WM_SIZE: {
+        if (device)
+        {
+            UINT width = LOWORD(lParam);
+            UINT height = HIWORD(lParam);
+            D3DVIEWPORT9 viewport;
+            viewport.Width = width;
+            viewport.Height = height;
+            device->SetViewport(&viewport);
+        }
+        break;
+    }
     default:
         return DefWindowProc(hWnd, message, wParam, lParam);
     }
     return 0;
 }
 
-// Message handler for about box.
 INT_PTR CALLBACK About(HWND hDlg, UINT message, WPARAM wParam, LPARAM lParam)
 {
     UNREFERENCED_PARAMETER(lParam);
